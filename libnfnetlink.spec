@@ -9,7 +9,7 @@ Source0:	ftp://ftp.netfilter.org/pub/libnfnetlink/%{name}-%{version}.tar.bz2
 URL:		http://www.netfilter.org/projects/libnfnetlink/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	linux-libc-headers >= 2.6.14.0
+BuildRequires:	linux-libc-headers >= 7:2.6.14.0
 Requires:	kernel = 3:%{_kernel_ver}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
