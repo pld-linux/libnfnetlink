@@ -9,7 +9,8 @@ Source0:	ftp://ftp.netfilter.org/pub/libnfnetlink/%{name}-%{version}.tar.bz2
 URL:		http://www.netfilter.org/projects/libnfnetlink/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	linux-libc-headers >= 7:2.6.14.0
+%define		_llh_version	7:2.6.14.0-1
+BuildRequires:	linux-libc-headers >= %{_llh_version}
 Requires:	kernel = 3:%{_kernel_ver}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -27,6 +28,7 @@ libnetfilter_queue or libnetfilter_conntrack.
 Summary:	Header files for libnfnetlink library
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
+Requires:	linux-libc-headers >= %{_llh_version}
 
 %description devel
 Header files for libnfnetlink library.
