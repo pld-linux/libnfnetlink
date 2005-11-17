@@ -10,7 +10,7 @@ Source0:	ftp://ftp.netfilter.org/pub/libnfnetlink/%{name}-%{version}.tar.bz2
 URL:		http://www.netfilter.org/projects/libnfnetlink/
 BuildRequires:	autoconf
 BuildRequires:	automake
-%define		_llh_version	7:2.6.14.0-1
+%define		_llh_version	7:2.6.12.0-9
 BuildRequires:	linux-libc-headers >= %{_llh_version}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
