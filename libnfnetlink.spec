@@ -2,7 +2,7 @@ Summary:	low-level library for netfilter related kernel/userspace communication
 Summary(pl):	Niskopoziomowa biblioteka do zwi±zanej z netfiltrem komunikacji miêdzy j±drem a przestrzeni± u¿ytkownika
 Name:		libnfnetlink
 Version:	0.0.13
-Release:	1
+Release:	2
 License:	GPL
 Group:		Libraries
 Source0:	ftp://ftp.netfilter.org/pub/libnfnetlink/%{name}-%{version}.tar.bz2
