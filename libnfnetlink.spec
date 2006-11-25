@@ -3,7 +3,7 @@ Summary(pl):	Niskopoziomowa biblioteka do zwi±zanej z netfiltrem komunikacji miê
 Name:		libnfnetlink
 Version:	0.0.16
 Release:	2
-License:	GPL
+License:	GPL v2
 Group:		Libraries
 Source0:	ftp://ftp.netfilter.org/pub/libnfnetlink/%{name}-%{version}.tar.bz2
 # Source0-md5:	5c9b7fc55c5cc7869ecf2ae5ac8afff3
@@ -65,8 +65,10 @@ Statyczna biblioteka libnfnetlink.
 %setup -q
 
 %build
+%{__libtoolize}
 %{__aclocal}
 %{__autoconf}
+%{__automake}
 %configure
 %{__make}
 
@@ -85,16 +87,16 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%attr(755,root,root) %{_libdir}/lib*.so.*.*.*
+%attr(755,root,root) %{_libdir}/libnfnetlink.so.*.*.*
 
 %files devel
 %defattr(644,root,root,755)
+%attr(755,root,root) %{_libdir}/libnfnetlink.so
+%{_libdir}/libnfnetlink.la
 %dir %{_includedir}/%{name}
 %{_includedir}/%{name}/*.h
-%attr(755,root,root) %{_libdir}/lib*.so
-%{_libdir}/lib*.la
 %{_pkgconfigdir}/%{name}.pc
 
 %files static
 %defattr(644,root,root,755)
-%{_libdir}/lib*.a
+%{_libdir}/libnfnetlink.a
