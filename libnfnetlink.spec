@@ -1,5 +1,5 @@
 Summary:	low-level library for netfilter related kernel/userspace communication
-Summary(pl):	Niskopoziomowa biblioteka do zwi±zanej z netfiltrem komunikacji miÍdzy j±drem a przestrzeni± uøytkownika
+Summary(pl.UTF-8):   Niskopoziomowa biblioteka do zwiƒÖzanej z netfiltrem komunikacji miƒôdzy jƒÖdrem a przestrzeniƒÖ u≈ºytkownika
 Name:		libnfnetlink
 Version:	0.0.25
 Release:	1
@@ -25,20 +25,20 @@ not meant as a public API for application developers. It is only used
 by other netfilter.org projects, such as libnetfilter_log,
 libnetfilter_queue or libnetfilter_conntrack.
 
-%description -l pl
-libnfnetlink to niskopoziomowa biblioteka do zwi±zanej z netfiltrem
-komunikacji miÍdzy j±drem a przestrzeni± uøytkownika. UdostÍpnia
-ogÛln± infrastrukturÍ komunikatÛw dla podsystemÛw netfiltra w j±drze
+%description -l pl.UTF-8
+libnfnetlink to niskopoziomowa biblioteka do zwiƒÖzanej z netfiltrem
+komunikacji miƒôdzy jƒÖdrem a przestrzeniƒÖ u≈ºytkownika. Udostƒôpnia
+og√≥lnƒÖ infrastrukturƒô komunikat√≥w dla podsystem√≥w netfiltra w jƒÖdrze
 (takich jak nfnetlink_log, nfnetlink_queue, nfnetlink_conntrack) oraz
-ich uøytkownikÛw i/lub narzÍdzi zarz±dzaj±cych w przestrzeni
-uøytkownika. Ta biblioteka nie jest przeznaczona jako publiczne API
-dla twÛrcÛw aplikacji; jest jedynie uøywana przez inne projekty
+ich u≈ºytkownik√≥w i/lub narzƒôdzi zarzƒÖdzajƒÖcych w przestrzeni
+u≈ºytkownika. Ta biblioteka nie jest przeznaczona jako publiczne API
+dla tw√≥rc√≥w aplikacji; jest jedynie u≈ºywana przez inne projekty
 netfilter.org, takie jak libnetfilter_log, libnetfilter_queue czy
 libnetfilter_conntrack.
 
 %package devel
 Summary:	Header files for libnfnetlink library
-Summary(pl):	Pliki nag≥Ûwkowe biblioteki libnfnetlink
+Summary(pl.UTF-8):   Pliki nag≈Ç√≥wkowe biblioteki libnfnetlink
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	linux-libc-headers >= %{_llh_version}
@@ -46,19 +46,19 @@ Requires:	linux-libc-headers >= %{_llh_version}
 %description devel
 Header files for libnfnetlink library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe biblioteki libnfnetlink.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe biblioteki libnfnetlink.
 
 %package static
 Summary:	Static libnfnetlink library
-Summary(pl):	Statyczna biblioteka libnfnetlink
+Summary(pl.UTF-8):   Statyczna biblioteka libnfnetlink
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libnfnetlink library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczna biblioteka libnfnetlink.
 
 %prep
