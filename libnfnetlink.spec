@@ -1,5 +1,5 @@
 Summary:	low-level library for netfilter related kernel/userspace communication
-Summary(pl.UTF-8):   Niskopoziomowa biblioteka do związanej z netfiltrem komunikacji między jądrem a przestrzenią użytkownika
+Summary(pl.UTF-8):	Niskopoziomowa biblioteka do związanej z netfiltrem komunikacji między jądrem a przestrzenią użytkownika
 Name:		libnfnetlink
 Version:	0.0.25
 Release:	1
@@ -38,7 +38,7 @@ libnetfilter_conntrack.
 
 %package devel
 Summary:	Header files for libnfnetlink library
-Summary(pl.UTF-8):   Pliki nagłówkowe biblioteki libnfnetlink
+Summary(pl.UTF-8):	Pliki nagłówkowe biblioteki libnfnetlink
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Requires:	linux-libc-headers >= %{_llh_version}
@@ -51,7 +51,7 @@ Pliki nagłówkowe biblioteki libnfnetlink.
 
 %package static
 Summary:	Static libnfnetlink library
-Summary(pl.UTF-8):   Statyczna biblioteka libnfnetlink
+Summary(pl.UTF-8):	Statyczna biblioteka libnfnetlink
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
