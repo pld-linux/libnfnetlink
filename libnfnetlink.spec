@@ -1,12 +1,12 @@
 Summary:	low-level library for netfilter related kernel/userspace communication
 Summary(pl.UTF-8):	Niskopoziomowa biblioteka do związanej z netfiltrem komunikacji między jądrem a przestrzenią użytkownika
 Name:		libnfnetlink
-Version:	0.0.33
+Version:	0.0.39
 Release:	1
 License:	GPL v2
 Group:		Libraries
 Source0:	http://www.netfilter.org/projects/libnfnetlink/files/%{name}-%{version}.tar.bz2
-# Source0-md5:	b97bc6747cb4e65b9989daa136f339cb
+# Source0-md5:	348fed8c1edbe5b873ffc7b192140093
 URL:		http://www.netfilter.org/projects/libnfnetlink/
 BuildRequires:	autoconf
 BuildRequires:	automake
